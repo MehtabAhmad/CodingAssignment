@@ -39,15 +39,17 @@ class MainTabBarConroller: UITabBarController {
     
     
     private func usersList() -> UIViewController {
-        let vc = UIViewController()
-        vc.view.backgroundColor = .yellow
+        let vc = ListViewController()
+        let vm = ListViewModel()
+        vc.listVM = vm
         return vc
     }
     
     
     private func animalsList() -> UIViewController {
-        let vc = UIViewController()
-        vc.view.backgroundColor = .white
+        let vc = ListViewController()
+        let vm = ListViewModel()
+        vc.listVM = vm
         return vc
     }
 }
