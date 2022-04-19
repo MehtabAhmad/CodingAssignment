@@ -14,6 +14,7 @@
 		BA39034F280F508D00AEEA0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA39034E280F508D00AEEA0A /* Assets.xcassets */; };
 		BA390352280F508D00AEEA0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA390350280F508D00AEEA0A /* LaunchScreen.storyboard */; };
 		BA39035D280F508D00AEEA0A /* LBCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39035C280F508D00AEEA0A /* LBCodeChallengeTests.swift */; };
+		BA39037B280F57C400AEEA0A /* MainTabBarConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39037A280F57C400AEEA0A /* MainTabBarConroller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		BA390353280F508D00AEEA0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA390358280F508D00AEEA0A /* LBCodeChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LBCodeChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA39035C280F508D00AEEA0A /* LBCodeChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBCodeChallengeTests.swift; sourceTree = "<group>"; };
+		BA39037A280F57C400AEEA0A /* MainTabBarConroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarConroller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,11 +124,20 @@
 		BA390378280F55F900AEEA0A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				BA390379280F57C400AEEA0A /* TabBar */,
 				BA39034B280F508B00AEEA0A /* Main.storyboard */,
 				BA390349280F508B00AEEA0A /* ViewController.swift */,
 				BA390350280F508D00AEEA0A /* LaunchScreen.storyboard */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BA390379280F57C400AEEA0A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				BA39037A280F57C400AEEA0A /* MainTabBarConroller.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA39034A280F508B00AEEA0A /* ViewController.swift in Sources */,
+				BA39037B280F57C400AEEA0A /* MainTabBarConroller.swift in Sources */,
 				BA390346280F508B00AEEA0A /* AppDelegate.swift in Sources */,
 				BA390348280F508B00AEEA0A /* SceneDelegate.swift in Sources */,
 			);
