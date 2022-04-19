@@ -78,12 +78,11 @@
 		BA390344280F508B00AEEA0A /* LBCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				BA390345280F508B00AEEA0A /* AppDelegate.swift */,
-				BA390347280F508B00AEEA0A /* SceneDelegate.swift */,
-				BA390349280F508B00AEEA0A /* ViewController.swift */,
-				BA39034B280F508B00AEEA0A /* Main.storyboard */,
+				BA390378280F55F900AEEA0A /* Presentation */,
+				BA390377280F55EB00AEEA0A /* Domain */,
+				BA390376280F55DF00AEEA0A /* Infrastructure */,
+				BA390375280F55D700AEEA0A /* App */,
 				BA39034E280F508D00AEEA0A /* Assets.xcassets */,
-				BA390350280F508D00AEEA0A /* LaunchScreen.storyboard */,
 				BA390353280F508D00AEEA0A /* Info.plist */,
 			);
 			path = LBCodeChallenge;
@@ -95,6 +94,39 @@
 				BA39035C280F508D00AEEA0A /* LBCodeChallengeTests.swift */,
 			);
 			path = LBCodeChallengeTests;
+			sourceTree = "<group>";
+		};
+		BA390375280F55D700AEEA0A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BA390347280F508B00AEEA0A /* SceneDelegate.swift */,
+				BA390345280F508B00AEEA0A /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BA390376280F55DF00AEEA0A /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		BA390377280F55EB00AEEA0A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		BA390378280F55F900AEEA0A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BA39034B280F508B00AEEA0A /* Main.storyboard */,
+				BA390349280F508B00AEEA0A /* ViewController.swift */,
+				BA390350280F508D00AEEA0A /* LaunchScreen.storyboard */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
