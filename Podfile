@@ -7,7 +7,7 @@ target 'LBCodeChallenge' do
 
   # Pods for LBCodeChallenge
 
-pod 'AlamofireObjectMapper', '~> 5.2'
+pod 'Alamofire'
 pod 'SVProgressHUD'
 pod 'SwiftyJSON'
 pod 'Kingfisher'

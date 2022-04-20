@@ -1,15 +1,11 @@
 PODS:
-  - Alamofire (4.9.1)
-  - AlamofireObjectMapper (5.2.1):
-    - Alamofire (~> 4.7)
-    - ObjectMapper (~> 3.4)
+  - Alamofire (5.5.0)
   - Kingfisher (7.2.0)
-  - ObjectMapper (3.5.3)
   - SVProgressHUD (2.2.5)
   - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
-  - AlamofireObjectMapper (~> 5.2)
+  - Alamofire
   - Kingfisher
   - SVProgressHUD
   - SwiftyJSON
@@ -17,20 +13,16 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
-    - AlamofireObjectMapper
     - Kingfisher
-    - ObjectMapper
     - SVProgressHUD
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   Kingfisher: 3ac0b75b155cabc0e544877d1a4deea29feece92
-  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 09d09633f926030132d1923101e65ccb405593d2
+PODFILE CHECKSUM: 58cc646518ee4c66ab3cdba3404b492b72149268
 
 COCOAPODS: 1.11.0

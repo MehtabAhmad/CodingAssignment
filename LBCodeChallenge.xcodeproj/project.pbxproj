@@ -26,6 +26,13 @@
 		BA390394281046FB00AEEA0A /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA390391281046FB00AEEA0A /* UserDetailViewController.swift */; };
 		BA39039A2810490000AEEA0A /* AnimalDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3903972810490000AEEA0A /* AnimalDetailViewController.xib */; };
 		BA39039B2810490000AEEA0A /* AnimalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3903982810490000AEEA0A /* AnimalDetailViewController.swift */; };
+		BA39039D28104F7200AEEA0A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39039C28104F7200AEEA0A /* DataService.swift */; };
+		BA3903A428104F9800AEEA0A /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39039F28104F9800AEEA0A /* EndPoints.swift */; };
+		BA3903A528104F9800AEEA0A /* RemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3903A028104F9800AEEA0A /* RemoteAPI.swift */; };
+		BA3903A628104F9800AEEA0A /* AnimalRemoteServiceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3903A228104F9800AEEA0A /* AnimalRemoteServiceAdapter.swift */; };
+		BA3903A728104F9800AEEA0A /* UserRemoteServiceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3903A328104F9800AEEA0A /* UserRemoteServiceAdapter.swift */; };
+		BA3903AB28104FF800AEEA0A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3903A928104FF800AEEA0A /* User.swift */; };
+		BA3903AC28104FF800AEEA0A /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3903AA28104FF800AEEA0A /* Animal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +70,13 @@
 		BA390391281046FB00AEEA0A /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		BA3903972810490000AEEA0A /* AnimalDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimalDetailViewController.xib; sourceTree = "<group>"; };
 		BA3903982810490000AEEA0A /* AnimalDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalDetailViewController.swift; sourceTree = "<group>"; };
+		BA39039C28104F7200AEEA0A /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		BA39039F28104F9800AEEA0A /* EndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		BA3903A028104F9800AEEA0A /* RemoteAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAPI.swift; sourceTree = "<group>"; };
+		BA3903A228104F9800AEEA0A /* AnimalRemoteServiceAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalRemoteServiceAdapter.swift; sourceTree = "<group>"; };
+		BA3903A328104F9800AEEA0A /* UserRemoteServiceAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRemoteServiceAdapter.swift; sourceTree = "<group>"; };
+		BA3903A928104FF800AEEA0A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BA3903AA28104FF800AEEA0A /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		DAB19DA04BF2834CF63B9503 /* Pods-LBCodeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBCodeChallenge.release.xcconfig"; path = "Target Support Files/Pods-LBCodeChallenge/Pods-LBCodeChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		FFE4199CA11F53FE5ECA54B2 /* Pods_LBCodeChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBCodeChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -95,7 +109,6 @@
 				186E3BC1D3CA2D110CABE336 /* Pods-LBCodeChallengeTests.debug.xcconfig */,
 				1B801C5BFDC5500CB3F5E019 /* Pods-LBCodeChallengeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -163,6 +176,9 @@
 		BA390376280F55DF00AEEA0A /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				BA3903A128104F9800AEEA0A /* Adapters */,
+				BA39039E28104F9800AEEA0A /* Remote */,
+				BA39039C28104F7200AEEA0A /* DataService.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -170,6 +186,7 @@
 		BA390377280F55EB00AEEA0A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				BA3903A828104FF800AEEA0A /* Model */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -248,6 +265,33 @@
 			path = AnimalDetail;
 			sourceTree = "<group>";
 		};
+		BA39039E28104F9800AEEA0A /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				BA39039F28104F9800AEEA0A /* EndPoints.swift */,
+				BA3903A028104F9800AEEA0A /* RemoteAPI.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		BA3903A128104F9800AEEA0A /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				BA3903A228104F9800AEEA0A /* AnimalRemoteServiceAdapter.swift */,
+				BA3903A328104F9800AEEA0A /* UserRemoteServiceAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		BA3903A828104FF800AEEA0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA3903A928104FF800AEEA0A /* User.swift */,
+				BA3903AA28104FF800AEEA0A /* Animal.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -301,6 +345,7 @@
 				TargetAttributes = {
 					BA390341280F508B00AEEA0A = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					BA390357280F508D00AEEA0A = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -420,14 +465,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA39037B280F57C400AEEA0A /* MainTabBarConroller.swift in Sources */,
+				BA3903AC28104FF800AEEA0A /* Animal.swift in Sources */,
 				BA39039B2810490000AEEA0A /* AnimalDetailViewController.swift in Sources */,
 				BA390384280F5BD700AEEA0A /* ListViewModel.swift in Sources */,
 				BA390346280F508B00AEEA0A /* AppDelegate.swift in Sources */,
+				BA3903AB28104FF800AEEA0A /* User.swift in Sources */,
 				BA39038B280F5DC100AEEA0A /* TableView.swift in Sources */,
+				BA39039D28104F7200AEEA0A /* DataService.swift in Sources */,
 				BA390387280F5BD700AEEA0A /* ItemTableViewCell.swift in Sources */,
 				BA390383280F5BD600AEEA0A /* ListViewController.swift in Sources */,
+				BA3903A628104F9800AEEA0A /* AnimalRemoteServiceAdapter.swift in Sources */,
 				BA390386280F5BD700AEEA0A /* ItemCellViewModel.swift in Sources */,
 				BA390348280F508B00AEEA0A /* SceneDelegate.swift in Sources */,
+				BA3903A428104F9800AEEA0A /* EndPoints.swift in Sources */,
+				BA3903A728104F9800AEEA0A /* UserRemoteServiceAdapter.swift in Sources */,
+				BA3903A528104F9800AEEA0A /* RemoteAPI.swift in Sources */,
 				BA390394281046FB00AEEA0A /* UserDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
