@@ -9,6 +9,8 @@ import Foundation
 
 class ListViewModel {
    
+    let service:BaseDataService!
+    
     var itemsFetched: (([ItemCellViewModel]) -> Void)?
     var itemsFetchFailed: ((String) -> Void)?
     var loadingStateChanged: ((Bool) -> Void)?
@@ -25,23 +27,15 @@ class ListViewModel {
         }
     }
     
-    func loadUsers() {
-        RemoteAPI.shared.getRequest(url: EndPoints.usersList, completion: { [weak self] (users:[User]) in
-            self?.itemsFetched?(users.map{user in
-                ItemCellViewModel(user: user)
-            })
-            self?.isLoading = false
-        }, failure: { [weak self] error in
-            self?.errorMessage = error
-            self?.isLoading = false
-        })
+    init(dataService:BaseDataService) {
+        self.service = dataService
     }
     
-    func loadAnimals() {
-        RemoteAPI.shared.getRequest(url: EndPoints.animalsList, completion: { [weak self] (animals:[Animal]) in
-            self?.itemsFetched?(animals.map{animal in
-                ItemCellViewModel(animal: animal)
-            })
+    
+    func loadItems() {
+        isLoading = true
+        service.loadItems(completion: { [weak self] items in
+            self?.itemsFetched?(items)
             self?.isLoading = false
         }, failure: { [weak self] error in
             self?.errorMessage = error

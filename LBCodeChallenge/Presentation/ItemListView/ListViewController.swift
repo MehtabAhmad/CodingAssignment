@@ -10,14 +10,13 @@ import UIKit
 class ListViewController: UITableViewController {
     
     var listVM:ListViewModel?
-    private var items:[ItemCellViewModel] = []
+    var items:[ItemCellViewModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setBindings()
-        
-        loadItems()
+        listVM?.loadItems()
         
         refreshControl = UIRefreshControl()
         refreshControl?.addTarget(self, action: #selector(refresh), for: .valueChanged)
@@ -44,11 +43,7 @@ class ListViewController: UITableViewController {
     }
     
     @objc private func refresh() {
-        loadItems()
-    }
-    
-    func loadItems() {
-        self.tabBarController?.selectedIndex == 0 ? listVM?.loadUsers() : listVM?.loadAnimals()
+        listVM?.loadItems()
     }
 }
 

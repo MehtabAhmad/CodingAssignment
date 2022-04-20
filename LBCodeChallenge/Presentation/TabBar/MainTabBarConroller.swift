@@ -25,6 +25,7 @@ class MainTabBarConroller: UITabBarController {
     
     private func tabBarVC(for vc: UIViewController, title: String, icon: String) -> UIViewController {
         
+        vc.title = title
         vc.navigationItem.largeTitleDisplayMode = .always
         
         let nav = UINavigationController(rootViewController: vc)
@@ -32,7 +33,6 @@ class MainTabBarConroller: UITabBarController {
             systemName: icon,
             withConfiguration: UIImage.SymbolConfiguration(scale: .large)
         )
-        vc.title = title
         nav.navigationBar.prefersLargeTitles = true
         return nav
     }
@@ -40,16 +40,28 @@ class MainTabBarConroller: UITabBarController {
     
     private func usersList() -> UIViewController {
         let vc = ListViewController()
-        let vm = ListViewModel()
-        vc.listVM = vm
+        
+        let service = UserRemoteServiceAdapter(url: EndPoints.usersList, api: .shared)
+        
+        let viewModel = ListViewModel(dataService: service)
+        
+        vc.listVM = viewModel
+        vc.title = "Users"
+        
         return vc
     }
     
     
     private func animalsList() -> UIViewController {
         let vc = ListViewController()
-        let vm = ListViewModel()
-        vc.listVM = vm
+        
+        let service = AnimalRemoteServiceAdapter(url: EndPoints.animalsList, api: .shared)
+        
+        let viewModel = ListViewModel(dataService: service)
+        
+        vc.listVM = viewModel
+        vc.title = "Animals"
+        
         return vc
     }
 }
