@@ -65,6 +65,8 @@ extension ListViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(items[indexPath.row])
+        
+        self.tabBarController?.selectedIndex == 0 ? self.show(UserDetailViewController(), sender: self) : self.show(AnimalDetailViewController(), sender: self)
+        
     }
 }

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BA390346280F508B00AEEA0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA390345280F508B00AEEA0A /* AppDelegate.swift */; };
 		BA390348280F508B00AEEA0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA390347280F508B00AEEA0A /* SceneDelegate.swift */; };
-		BA39034A280F508B00AEEA0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA390349280F508B00AEEA0A /* ViewController.swift */; };
 		BA39034D280F508B00AEEA0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA39034B280F508B00AEEA0A /* Main.storyboard */; };
 		BA39034F280F508D00AEEA0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA39034E280F508D00AEEA0A /* Assets.xcassets */; };
 		BA390352280F508D00AEEA0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA390350280F508D00AEEA0A /* LaunchScreen.storyboard */; };
@@ -21,6 +20,10 @@
 		BA390386280F5BD700AEEA0A /* ItemCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA390381280F5BD600AEEA0A /* ItemCellViewModel.swift */; };
 		BA390387280F5BD700AEEA0A /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA390382280F5BD600AEEA0A /* ItemTableViewCell.swift */; };
 		BA39038B280F5DC100AEEA0A /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA390389280F5DC100AEEA0A /* TableView.swift */; };
+		BA390392281046FB00AEEA0A /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA39038F281046FB00AEEA0A /* UserDetailViewController.xib */; };
+		BA390394281046FB00AEEA0A /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA390391281046FB00AEEA0A /* UserDetailViewController.swift */; };
+		BA39039A2810490000AEEA0A /* AnimalDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3903972810490000AEEA0A /* AnimalDetailViewController.xib */; };
+		BA39039B2810490000AEEA0A /* AnimalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3903982810490000AEEA0A /* AnimalDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,6 @@
 		BA390342280F508B00AEEA0A /* LBCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA390345280F508B00AEEA0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA390347280F508B00AEEA0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BA390349280F508B00AEEA0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA39034C280F508B00AEEA0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA39034E280F508D00AEEA0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA390351280F508D00AEEA0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		BA390381280F5BD600AEEA0A /* ItemCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCellViewModel.swift; sourceTree = "<group>"; };
 		BA390382280F5BD600AEEA0A /* ItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		BA390389280F5DC100AEEA0A /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		BA39038F281046FB00AEEA0A /* UserDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
+		BA390391281046FB00AEEA0A /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		BA3903972810490000AEEA0A /* AnimalDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimalDetailViewController.xib; sourceTree = "<group>"; };
+		BA3903982810490000AEEA0A /* AnimalDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 		BA390344280F508B00AEEA0A /* LBCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				BA39038D281046D400AEEA0A /* StoryBoards */,
 				BA390388280F5DC100AEEA0A /* Extensions */,
 				BA390378280F55F900AEEA0A /* Presentation */,
 				BA390377280F55EB00AEEA0A /* Domain */,
@@ -137,11 +144,10 @@
 		BA390378280F55F900AEEA0A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				BA3903952810490000AEEA0A /* AnimalDetail */,
+				BA39038E281046FB00AEEA0A /* UserDetail */,
 				BA39037C280F5BD600AEEA0A /* ItemListView */,
 				BA390379280F57C400AEEA0A /* TabBar */,
-				BA39034B280F508B00AEEA0A /* Main.storyboard */,
-				BA390349280F508B00AEEA0A /* ViewController.swift */,
-				BA390350280F508D00AEEA0A /* LaunchScreen.storyboard */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -180,6 +186,33 @@
 				BA390389280F5DC100AEEA0A /* TableView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BA39038D281046D400AEEA0A /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				BA390350280F508D00AEEA0A /* LaunchScreen.storyboard */,
+				BA39034B280F508B00AEEA0A /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		BA39038E281046FB00AEEA0A /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BA39038F281046FB00AEEA0A /* UserDetailViewController.xib */,
+				BA390391281046FB00AEEA0A /* UserDetailViewController.swift */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
+		BA3903952810490000AEEA0A /* AnimalDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BA3903972810490000AEEA0A /* AnimalDetailViewController.xib */,
+				BA3903982810490000AEEA0A /* AnimalDetailViewController.swift */,
+			);
+			path = AnimalDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +297,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA390385280F5BD700AEEA0A /* ItemTableViewCell.xib in Resources */,
+				BA390392281046FB00AEEA0A /* UserDetailViewController.xib in Resources */,
 				BA390352280F508D00AEEA0A /* LaunchScreen.storyboard in Resources */,
+				BA39039A2810490000AEEA0A /* AnimalDetailViewController.xib in Resources */,
 				BA39034F280F508D00AEEA0A /* Assets.xcassets in Resources */,
 				BA39034D280F508B00AEEA0A /* Main.storyboard in Resources */,
 			);
@@ -284,8 +319,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA39034A280F508B00AEEA0A /* ViewController.swift in Sources */,
 				BA39037B280F57C400AEEA0A /* MainTabBarConroller.swift in Sources */,
+				BA39039B2810490000AEEA0A /* AnimalDetailViewController.swift in Sources */,
 				BA390384280F5BD700AEEA0A /* ListViewModel.swift in Sources */,
 				BA390346280F508B00AEEA0A /* AppDelegate.swift in Sources */,
 				BA39038B280F5DC100AEEA0A /* TableView.swift in Sources */,
@@ -293,6 +328,7 @@
 				BA390383280F5BD600AEEA0A /* ListViewController.swift in Sources */,
 				BA390386280F5BD700AEEA0A /* ItemCellViewModel.swift in Sources */,
 				BA390348280F508B00AEEA0A /* SceneDelegate.swift in Sources */,
+				BA390394281046FB00AEEA0A /* UserDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
