@@ -32,6 +32,7 @@ class ListViewModel {
             items.append(ItemCellViewModel(user: user))
         }
         itemsFetched?(items)
+        isLoading = false
     }
     
     func loadAnimals() {
@@ -41,5 +42,6 @@ class ListViewModel {
             items.append(ItemCellViewModel(animal: animal))
         }
         itemsFetched?(items)
+        isLoading = false
     }
 }
