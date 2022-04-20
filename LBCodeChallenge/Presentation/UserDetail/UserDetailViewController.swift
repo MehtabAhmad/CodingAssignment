@@ -1,8 +1,8 @@
 //
 //  UserDetailViewController.swift
-//  LloydsCodeChallenge
+//  LBCodeChallenge
 //
-//  Created by Mehtab Ahmed on 13/04/2022.
+//  Created by Mehtab Ahmed on 20/04/2022.
 //
 
 import UIKit
