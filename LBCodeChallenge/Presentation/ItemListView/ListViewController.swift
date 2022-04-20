@@ -16,7 +16,8 @@ class ListViewController: UITableViewController {
         super.viewDidLoad()
         
         setBindings()
-        listVM?.loadItems()
+        
+        loadItems()
         
         refreshControl = UIRefreshControl()
         refreshControl?.addTarget(self, action: #selector(refresh), for: .valueChanged)
@@ -43,7 +44,11 @@ class ListViewController: UITableViewController {
     }
     
     @objc private func refresh() {
-        listVM?.loadItems()
+        loadItems()
+    }
+    
+    func loadItems() {
+        self.tabBarController?.selectedIndex == 0 ? listVM?.loadUsers() : listVM?.loadAnimals()
     }
 }
 

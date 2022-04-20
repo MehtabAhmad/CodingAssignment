@@ -25,14 +25,21 @@ class ListViewModel {
         }
     }
     
-    func loadItems() {
-        isLoading = true
+    func loadUsers() {
         var items:[ItemCellViewModel] = []
-        items.append(ItemCellViewModel(imageURL: nil, name: "Test title ", detailText1: "Test detail 1", detailText2: "Test detail 2"))
-        items.append(ItemCellViewModel(imageURL: nil, name: "Test title ", detailText1: "Test detail 1", detailText2: "Test detail 2"))
-        items.append(ItemCellViewModel(imageURL: nil, name: "Test title ", detailText1: "Test detail 1", detailText2: "Test detail 2"))
-        items.append(ItemCellViewModel(imageURL: nil, name: "Test title ", detailText1: "Test detail 1", detailText2: "Test detail 2"))
+        for _ in 0...10 {
+            let user = User(name: "Test title", email: "test@gmail.com", address: "Test address", image: "")
+            items.append(ItemCellViewModel(user: user))
+        }
         itemsFetched?(items)
-        isLoading = false
+    }
+    
+    func loadAnimals() {
+        var items:[ItemCellViewModel] = []
+        for _ in 0...10 {
+            let animal = Animal(name: "Test name", latinName: "Test latin name", habitat: "test habitat", imageLink: "")
+            items.append(ItemCellViewModel(animal: animal))
+        }
+        itemsFetched?(items)
     }
 }
