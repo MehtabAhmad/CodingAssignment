@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ItemTableViewCell: UITableViewCell {
     
@@ -16,6 +17,7 @@ class ItemTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        itemImageView.layer.cornerRadius = 7
     }
     
     
@@ -23,5 +25,15 @@ class ItemTableViewCell: UITableViewCell {
         itemTitleLabel.text = itemVM.name
         itemDetailLabel1.text = itemVM.detailText1
         itemDetailLabe2.text = itemVM.detailText2
+        itemImageView.kf.indicatorType = .activity
+        
+        itemImageView.kf.setImage(
+            with: itemVM.imageURL,
+            options: [
+                .processor(DownsamplingImageProcessor(size: itemImageView.frame.size)),
+                .scaleFactor(UIScreen.main.scale),
+                .cacheOriginalImage
+            ])
+        
     }
 }

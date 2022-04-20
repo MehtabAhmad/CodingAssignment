@@ -26,22 +26,26 @@ class ListViewModel {
     }
     
     func loadUsers() {
-        var items:[ItemCellViewModel] = []
-        for _ in 0...10 {
-            let user = User(name: "Test title", email: "test@gmail.com", address: "Test address", image: "")
-            items.append(ItemCellViewModel(user: user))
-        }
-        itemsFetched?(items)
-        isLoading = false
+        RemoteAPI.shared.getRequest(url: EndPoints.usersList, completion: { [weak self] (users:[User]) in
+            self?.itemsFetched?(users.map{user in
+                ItemCellViewModel(user: user)
+            })
+            self?.isLoading = false
+        }, failure: { [weak self] error in
+            self?.errorMessage = error
+            self?.isLoading = false
+        })
     }
     
     func loadAnimals() {
-        var items:[ItemCellViewModel] = []
-        for _ in 0...10 {
-            let animal = Animal(name: "Test name", latinName: "Test latin name", habitat: "test habitat", imageLink: "")
-            items.append(ItemCellViewModel(animal: animal))
-        }
-        itemsFetched?(items)
-        isLoading = false
+        RemoteAPI.shared.getRequest(url: EndPoints.animalsList, completion: { [weak self] (animals:[Animal]) in
+            self?.itemsFetched?(animals.map{animal in
+                ItemCellViewModel(animal: animal)
+            })
+            self?.isLoading = false
+        }, failure: { [weak self] error in
+            self?.errorMessage = error
+            self?.isLoading = false
+        })
     }
 }
