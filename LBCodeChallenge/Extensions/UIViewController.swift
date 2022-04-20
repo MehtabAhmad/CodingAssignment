@@ -11,12 +11,14 @@ import UIKit
 extension UIViewController {
     
     func selectAnimal(animal: Animal) {
-        let vc = AnimalDetailViewController()
+        let viewModel = AnimalDetailViewModel(item: animal)
+        let vc = AnimalDetailViewController(vm: viewModel)
         self.show(vc, sender: self)
     }
     
     func selectUser(user: User) {
-        let vc = UserDetailViewController()
+        let viewModel = UserDetailViewModel(item: user)
+        let vc = UserDetailViewController(vm: viewModel)
         self.show(vc, sender: self)
     }
 }
