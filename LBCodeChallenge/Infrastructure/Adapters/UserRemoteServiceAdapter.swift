@@ -11,11 +11,14 @@ struct UserRemoteServiceAdapter: BaseDataService {
     
     let url:String
     let api: RemoteAPI
+    var select:((User) -> Void)
    
     func loadItems(completion: @escaping ([ItemCellViewModel]) -> Void, failure: @escaping (String) -> Void) {
-        api.getRequest(url: EndPoints.usersList, completion: { (users: [User]) in
-            completion ( users.map { item in
-                ItemCellViewModel(user: item)
+        api.getRequest(url: EndPoints.usersList, completion: { (people: [User]) in
+            completion ( people.map { item in
+                ItemCellViewModel(item, selection: {
+                    select(item)
+                })
                 })
         },
         failure: { error in

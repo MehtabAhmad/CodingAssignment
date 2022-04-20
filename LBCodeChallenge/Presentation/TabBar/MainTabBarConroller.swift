@@ -41,7 +41,9 @@ class MainTabBarConroller: UITabBarController {
     private func usersList() -> UIViewController {
         let vc = ListViewController()
         
-        let service = UserRemoteServiceAdapter(url: EndPoints.usersList, api: .shared)
+        let service = UserRemoteServiceAdapter(url: EndPoints.usersList, api: .shared, select: { item in
+            vc.selectUser(user: item)
+        })
         
         let viewModel = ListViewModel(dataService: service)
         
@@ -55,7 +57,9 @@ class MainTabBarConroller: UITabBarController {
     private func animalsList() -> UIViewController {
         let vc = ListViewController()
         
-        let service = AnimalRemoteServiceAdapter(url: EndPoints.animalsList, api: .shared)
+        let service = AnimalRemoteServiceAdapter(url: EndPoints.animalsList, api: .shared, select: { item in
+            vc.selectAnimal(animal: item)
+        })
         
         let viewModel = ListViewModel(dataService: service)
         

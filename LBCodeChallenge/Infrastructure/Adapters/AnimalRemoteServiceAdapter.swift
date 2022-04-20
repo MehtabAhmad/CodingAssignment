@@ -11,11 +11,14 @@ struct AnimalRemoteServiceAdapter: BaseDataService {
     
     let url:String
     let api: RemoteAPI
-
+    var select:((Animal) -> Void)
+   
     func loadItems(completion: @escaping ([ItemCellViewModel]) -> Void, failure: @escaping (String) -> Void) {
         api.getRequest(url: EndPoints.animalsList, completion: { (animals: [Animal]) in
             completion ( animals.map { item in
-                ItemCellViewModel(animal: item)
+                ItemCellViewModel(animal: item, selection: {
+                    select(item)
+                })
                 })
         },
         failure: { error in
