@@ -26,7 +26,7 @@
 		BA390394281046FB00AEEA0A /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA390391281046FB00AEEA0A /* UserDetailViewController.swift */; };
 		BA39039A2810490000AEEA0A /* AnimalDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3903972810490000AEEA0A /* AnimalDetailViewController.xib */; };
 		BA39039B2810490000AEEA0A /* AnimalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3903982810490000AEEA0A /* AnimalDetailViewController.swift */; };
-		BA39039D28104F7200AEEA0A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39039C28104F7200AEEA0A /* DataService.swift */; };
+		BA39039D28104F7200AEEA0A /* BaseDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39039C28104F7200AEEA0A /* BaseDataService.swift */; };
 		BA3903A428104F9800AEEA0A /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39039F28104F9800AEEA0A /* EndPoints.swift */; };
 		BA3903A528104F9800AEEA0A /* RemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3903A028104F9800AEEA0A /* RemoteAPI.swift */; };
 		BA3903A628104F9800AEEA0A /* AnimalRemoteServiceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3903A228104F9800AEEA0A /* AnimalRemoteServiceAdapter.swift */; };
@@ -70,7 +70,7 @@
 		BA390391281046FB00AEEA0A /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		BA3903972810490000AEEA0A /* AnimalDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimalDetailViewController.xib; sourceTree = "<group>"; };
 		BA3903982810490000AEEA0A /* AnimalDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalDetailViewController.swift; sourceTree = "<group>"; };
-		BA39039C28104F7200AEEA0A /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		BA39039C28104F7200AEEA0A /* BaseDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDataService.swift; sourceTree = "<group>"; };
 		BA39039F28104F9800AEEA0A /* EndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		BA3903A028104F9800AEEA0A /* RemoteAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAPI.swift; sourceTree = "<group>"; };
 		BA3903A228104F9800AEEA0A /* AnimalRemoteServiceAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalRemoteServiceAdapter.swift; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 			children = (
 				BA3903A128104F9800AEEA0A /* Adapters */,
 				BA39039E28104F9800AEEA0A /* Remote */,
-				BA39039C28104F7200AEEA0A /* DataService.swift */,
+				BA39039C28104F7200AEEA0A /* BaseDataService.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -471,7 +471,7 @@
 				BA390346280F508B00AEEA0A /* AppDelegate.swift in Sources */,
 				BA3903AB28104FF800AEEA0A /* User.swift in Sources */,
 				BA39038B280F5DC100AEEA0A /* TableView.swift in Sources */,
-				BA39039D28104F7200AEEA0A /* DataService.swift in Sources */,
+				BA39039D28104F7200AEEA0A /* BaseDataService.swift in Sources */,
 				BA390387280F5BD700AEEA0A /* ItemTableViewCell.swift in Sources */,
 				BA390383280F5BD600AEEA0A /* ListViewController.swift in Sources */,
 				BA3903A628104F9800AEEA0A /* AnimalRemoteServiceAdapter.swift in Sources */,
