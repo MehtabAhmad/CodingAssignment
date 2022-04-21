@@ -48,7 +48,6 @@ class MainTabBarConroller: UITabBarController {
         let viewModel = ListViewModel(dataService: service)
         
         vc.listVM = viewModel
-        vc.title = "Users"
         
         return vc
     }
@@ -62,10 +61,8 @@ class MainTabBarConroller: UITabBarController {
         })
         
         let viewModel = ListViewModel(dataService: service)
-        
         vc.listVM = viewModel
-        vc.title = "Animals"
-        
+      
         return vc
     }
 }
