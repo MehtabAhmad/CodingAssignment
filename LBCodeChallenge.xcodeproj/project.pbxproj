@@ -37,6 +37,7 @@
 		BA3903B4281076B600AEEA0A /* AnimalDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3903B3281076B600AEEA0A /* AnimalDetailViewModel.swift */; };
 		BA3903B82811F4E200AEEA0A /* MainTabBarControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3903B72811F4E200AEEA0A /* MainTabBarControllerTests.swift */; };
 		BA3903BA2811F9B300AEEA0A /* ListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3903B92811F9B300AEEA0A /* ListViewControllerTest.swift */; };
+		BA3903C02811FE1400AEEA0A /* UserDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3903BF2811FE1400AEEA0A /* UserDetailViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		BA3903B3281076B600AEEA0A /* AnimalDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalDetailViewModel.swift; sourceTree = "<group>"; };
 		BA3903B72811F4E200AEEA0A /* MainTabBarControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarControllerTests.swift; sourceTree = "<group>"; };
 		BA3903B92811F9B300AEEA0A /* ListViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewControllerTest.swift; sourceTree = "<group>"; };
+		BA3903BF2811FE1400AEEA0A /* UserDetailViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewControllerTests.swift; sourceTree = "<group>"; };
 		DAB19DA04BF2834CF63B9503 /* Pods-LBCodeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBCodeChallenge.release.xcconfig"; path = "Target Support Files/Pods-LBCodeChallenge/Pods-LBCodeChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		FFE4199CA11F53FE5ECA54B2 /* Pods_LBCodeChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBCodeChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				BA3903B92811F9B300AEEA0A /* ListViewControllerTest.swift */,
+				BA3903BF2811FE1400AEEA0A /* UserDetailViewControllerTests.swift */,
 				BA3903B72811F4E200AEEA0A /* MainTabBarControllerTests.swift */,
 			);
 			path = LBCodeChallengeTests;
@@ -504,6 +507,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA3903C02811FE1400AEEA0A /* UserDetailViewControllerTests.swift in Sources */,
 				BA3903BA2811F9B300AEEA0A /* ListViewControllerTest.swift in Sources */,
 				BA3903B82811F4E200AEEA0A /* MainTabBarControllerTests.swift in Sources */,
 			);
